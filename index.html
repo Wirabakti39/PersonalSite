@@ -153,23 +153,17 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-10 col-sm-6">
-                    <form>
+                    <form name="dwb-contact-form">
                         <div class="mb-3">
                           <label for="name" class="form-label"><p class="fs-4 text-secondary mb-0">Nama Kamu</p></label>
-                          <input type="text" id="name" class="form-control" placeholder="Siapa.. ?" aria-describedby="name">
+                          <input type="text" id="name" class="form-control" placeholder="Siapa.. ?" aria-describedby="name" name="nama">
                         </div>
 
                         <div class="mb-3">
                             <label for="pesan" class="form-label"><p class="fs-4 text-secondary mb-0">Teks Pesan</p></label>
-                            <textarea class="form-control" id="pesan" placeholder="Mau menyampaikan apa.. ?" rows="3"></textarea>
+                            <textarea class="form-control" id="pesan" placeholder="Mau menyampaikan apa.. ?" name="pesan" rows="3"></textarea>
                         </div>
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <form>
-                        <button type="submit" class="btn btn-dark">Kirim</button>
+			<button type="submit" class="btn btn-dark">Kirim</button>
                     </form>
                 </div>
             </div>
@@ -197,6 +191,18 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+
+    <script>
+  	const scriptURL = "https://script.google.com/macros/s/AKfycbzmReXVaXn5cAeP5vqoAr_z-KFXFOsJMTlmL3_0PdR7iJb1fFLcLSt-WVQ2cerBOlwu3Q/exec";
+  	const form = document.forms['dwb-contact-form'];
+
+  	form.addEventListener('submit', e => {
+    	e.preventDefault();
+    	fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      	.then(response => console.log('Success!', response))
+      	.catch(error => console.error('Error!', error.message))
+  	});
+    </script>
 </body>
 </html>
 
