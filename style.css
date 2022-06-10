@@ -1,0 +1,32 @@
+.customSpan span{
+    font-family: monospace;
+}
+
+.sosmed-icon {
+    display: flex;
+    width: 55px;
+    height: 55px;
+}
+.sosmed-icon:hover {
+    text-shadow: none;
+    transition: all 0.3s ease !important;
+    -webkit-transform: scale(1.1) !important;
+    -ms-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
+    z-index: 2;
+}
+
+#about, #contact {
+    background-color: rgb(245, 245, 245);
+}
+
+#header, #sosmed, footer {
+    background-color: rgb(225, 225, 225);
+}
+#header {
+    padding-top: 6rem;
+}
+
+section {
+    padding-top: 5rem;
+}
