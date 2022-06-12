@@ -1,5 +1,6 @@
 .customSpan {
     color: rgb(80, 80, 80);
+    padding-left: 2rem;
 }
 .customSpan span{
     font-family: monospace;
@@ -28,14 +29,27 @@
     background-color: rgb(225, 225, 225);
 }
 #header {
-    padding-top: 6rem;
+    padding-top: 2.5rem;
 }
 
-section {
-    padding-top: 5rem;
-}
 form .dwb-input input:focus, form .dwb-input textarea:focus {
     border-color: rgba(45, 45, 45, 0.8);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(65, 65, 65, 0.8);
     outline: 0 none;
+}
+.float-item {
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    right: 2.4rem;
+    bottom: 2.2rem;
+    background-color: rgb(225, 225, 225);
+    cursor: pointer;
+}
+body {
+
+}
+
+.dwb-nav {
+    
 }

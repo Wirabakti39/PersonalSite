@@ -19,7 +19,7 @@
 </head>
 <body id="home">
 <!-- NavBar -start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow dwb-nav">
         <div class="container">
             <a class="navbar-brand" href="#about">DwB</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,13 +49,16 @@
         <img src="src/gelapp.jpg" alt="Foto Profile Dimas" width="200" class="rounded-circle img-thumbnail"/>
         <h1 class="display-4">Dimas Wirabakti</h1>
         <p class="lead text-secondary">Pelajar</p>
+        <div id="patokan">
+
+        </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="rgb(245,245,245)" fill-opacity="1" d="M0,256L0,256L130.9,256L130.9,96L261.8,96L261.8,96L392.7,96L392.7,32L523.6,32L523.6,32L654.5,32L654.5,160L785.5,160L785.5,160L916.4,160L916.4,288L1047.3,288L1047.3,32L1178.2,32L1178.2,224L1309.1,224L1309.1,320L1440,320L1440,320L1309.1,320L1309.1,320L1178.2,320L1178.2,320L1047.3,320L1047.3,320L916.4,320L916.4,320L785.5,320L785.5,320L654.5,320L654.5,320L523.6,320L523.6,320L392.7,320L392.7,320L261.8,320L261.8,320L130.9,320L130.9,320L0,320L0,320Z"></path>
         </svg>
     </section>
 <!-- Home -end -->
 <!-- About -start -->
-    <section id="about" class="px-2">
+    <section id="about" class="">
         <div class="row text-center">
             <div class="col">
                 <h2>About Me</h2>
@@ -203,11 +206,19 @@
         </div>
     </section>
 <!-- Contact -end -->
+    <!-- Tombol Mengambang -->
+    <div id="float-element" class="d-flex border border-secondary rounded-circle justify-content-center align-items-center shadow">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+                <path fill="black" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </div>
+    </div>
 <!-- Footer -start -->
 <footer>
     <div class="row">
         <div class="col text-center">
-            <p class="fs-4 text-secondary mb-1">Created by <a href="https://instagram.com/mngdms_22" class="fw-bold text-dark text-decoration-none">Dimas Wirabakti</a></p>
+            <p class="fs-4 text-secondary mb-1">Created by <a href="https://instagram.com/mngdms_22"  class="fw-bold text-dark text-decoration-none">Dimas Wirabakti</a></p>
         </div>
     </div>
     <div class="row">
@@ -219,6 +230,19 @@
 <!-- Footer -end -->
 
     <script>
+    window.addEventListener('scroll', () => {
+        const element = document.getElementById('float-element');
+        const elementShow = 350;
+        let clientScroll = window.scrollY;
+        if (clientScroll > elementShow) {
+            element.classList.add('float-item');
+        } else {
+            element.classList.remove('float-item');
+        }
+    });
+    document.querySelector('#float-element').addEventListener('click', () => {
+        window.open('#home','_self')
+    });
   	const scriptURL = "https://script.google.com/macros/s/AKfycbzmReXVaXn5cAeP5vqoAr_z-KFXFOsJMTlmL3_0PdR7iJb1fFLcLSt-WVQ2cerBOlwu3Q/exec";
   	const form = document.forms['dwb-contact-form'];
         const btnKirim = document.querySelector('.btn-kirim');
