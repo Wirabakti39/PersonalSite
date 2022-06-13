@@ -19,9 +19,13 @@
 </head>
 <body id="home">
 <!-- NavBar -start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow dwb-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm dwb-nav">
         <div class="container">
             <a class="navbar-brand" href="#about">DwB</a>
+            <div id="switch-btn" class="d-flex justify-content-center">
+                <input type="checkbox" id="check" class="toggle">
+                <label id="check-label" for="check"></label>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -45,20 +49,20 @@
     </nav>
 <!-- NavBar -end -->
 <!-- Home -start -->
-    <section id="header" class="jumbotron text-center">
-        <img src="src/gelapp.jpg" alt="Foto Profile Dimas" width="200" class="rounded-circle img-thumbnail"/>
-        <h1 class="display-4">Dimas Wirabakti</h1>
+    <section id="header" class="jumbotron text-center dwb-bg-gelap">
+        <img id="dwbImg1" src="src/gelapp.jpg" alt="Foto Profile Dimas" width="200" class="rounded-circle img-thumbnail"/>
+        <h1 class="display-4 text-dark">Dimas Wirabakti</h1>
         <p class="lead text-secondary">Pelajar</p>
         <div id="patokan">
 
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="rgb(245,245,245)" fill-opacity="1" d="M0,256L0,256L130.9,256L130.9,96L261.8,96L261.8,96L392.7,96L392.7,32L523.6,32L523.6,32L654.5,32L654.5,160L785.5,160L785.5,160L916.4,160L916.4,288L1047.3,288L1047.3,32L1178.2,32L1178.2,224L1309.1,224L1309.1,320L1440,320L1440,320L1309.1,320L1309.1,320L1178.2,320L1178.2,320L1047.3,320L1047.3,320L916.4,320L916.4,320L785.5,320L785.5,320L654.5,320L654.5,320L523.6,320L523.6,320L392.7,320L392.7,320L261.8,320L261.8,320L130.9,320L130.9,320L0,320L0,320Z"></path>
+            <path class="fill-cerah fillCerah" fill-opacity="1" d="M0,256L0,256L130.9,256L130.9,96L261.8,96L261.8,96L392.7,96L392.7,32L523.6,32L523.6,32L654.5,32L654.5,160L785.5,160L785.5,160L916.4,160L916.4,288L1047.3,288L1047.3,32L1178.2,32L1178.2,224L1309.1,224L1309.1,320L1440,320L1440,320L1309.1,320L1309.1,320L1178.2,320L1178.2,320L1047.3,320L1047.3,320L916.4,320L916.4,320L785.5,320L785.5,320L654.5,320L654.5,320L523.6,320L523.6,320L392.7,320L392.7,320L261.8,320L261.8,320L130.9,320L130.9,320L0,320L0,320Z"></path>
         </svg>
     </section>
 <!-- Home -end -->
 <!-- About -start -->
-    <section id="about" class="">
+    <section id="about" class="dwb-bg-cerah">
         <div class="row text-center">
             <div class="col">
                 <h2>About Me</h2>
@@ -69,22 +73,22 @@
                 <p class="fs-5">Remaja kelahiran <span>  Bali  </span> dengan nama <span>Nyoman Dimas Wira Bakti</span> yang lahir pada bulan <span>September.</span></p>
             </div>
             <div class="col-md-3 ps-5">
-                <img src="src/dwb_alone.jpg" alt="Foto DimasWirabakti" class="img-thumbnail" width="250">
+                <img id="dwbImg2" src="src/dwb_alone.jpg" alt="Foto DimasWirabakti" class="border-gelap" width="250">
             </div>
             <div class="customSpan col-md-3">   <!-- About me row:2 Collumn:2 -->
                 <p class="fs-5">Putra tanah air <span>Indonesia</span> dan juga siswa <span>SpenThreeG</span> dengan segudang <span>Mimpi</span> yang belum <span>Tercapai.</span></p>
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="rgb(225,225,225)" fill-opacity="1" d="M0,160L0,160L160,160L160,224L320,224L320,288L480,288L480,192L640,192L640,224L800,224L800,64L960,64L960,256L1120,256L1120,160L1280,160L1280,192L1440,192L1440,320L1280,320L1280,320L1120,320L1120,320L960,320L960,320L800,320L800,320L640,320L640,320L480,320L480,320L320,320L320,320L160,320L160,320L0,320L0,320Z"></path>
+            <path class="fill-gelap fillGelap" fill-opacity="1" d="M0,160L0,160L160,160L160,224L320,224L320,288L480,288L480,192L640,192L640,224L800,224L800,64L960,64L960,256L1120,256L1120,160L1280,160L1280,192L1440,192L1440,320L1280,320L1280,320L1120,320L1120,320L960,320L960,320L800,320L800,320L640,320L640,320L480,320L480,320L320,320L320,320L160,320L160,320L0,320L0,320Z"></path>
         </svg>
     </section>
 <!-- About -end -->
 <!-- Sosmed -start -->
-    <section id="sosmed">
+    <section id="sosmed" class="dwb-bg-gelap">
         <div class="row mb-3 text-center">
             <div class="col">
-                <h2>Media Sosial</h2>
+                <h2 class="text-dark">Media Sosial</h2>
             </div>
         </div>
         <div class="row pt-2 text-center">
@@ -96,7 +100,7 @@
             <div class="col-4 d-flex justify-content-end">
                 <div class="sosmed-icon border border-secondary rounded-circle justify-content-center shadow">
                     <a href="https://youtube.com/channel/UCkzKAslvHgzHiGBKlIUi_hA" class="d-flex align-items-center" target="_blank" data-bs-toggle="tooltip" title="My Youtube Account" >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="black" class="bi bi-youtube" viewBox="0 0 16 16">
+                        <svg id="sosmed-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="bi bi-youtube fill-hitam" viewBox="0 0 16 16">
                             <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
                         </svg>
                     </a>
@@ -106,7 +110,7 @@
             <div class="col-4 d-flex justify-content-start">
                 <div class="sosmed-icon border border-secondary rounded-circle justify-content-center shadow">
                     <a href="https://instagram.com/mngdms_22" class="d-flex align-items-center" target="_blank" data-bs-toggle="tooltip" title="DwB Instagram Account" >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="black" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <svg id="sosmed-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="bi bi-instagram fill-hitam" viewBox="0 0 16 16">
                             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
                         </svg>
                     </a>
@@ -118,7 +122,7 @@
             <div class="col d-flex justify-content-center">
                 <div class="sosmed-icon border border-secondary rounded-circle justify-content-center shadow">
                     <a href="https://github.com/wirabakti39" class="d-flex align-items-center" target="_blank" data-bs-toggle="tooltip" title="DwB Github Account" >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="black" class="bi bi-github" viewBox="0 0 16 16">
+                        <svg id="sosmed-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="bi bi-github fill-hitam" viewBox="0 0 16 16">
                             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                         </svg>
                     </a>
@@ -130,7 +134,7 @@
             <div class="col-4 d-flex justify-content-end">
                 <div class="sosmed-icon border border-secondary rounded-circle justify-content-center shadow">
                     <a href="https://tiktok.com/@dimaswirabakti" class="d-flex align-items-center" target="_blank" data-bs-toggle="tooltip" title="DwB TikTok Account" >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-tiktok" viewBox="0 0 16 16">
+                        <svg id="sosmed-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi bi-tiktok fill-hitam" viewBox="0 0 16 16">
                             <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
                         </svg>
                     </a>
@@ -140,7 +144,7 @@
             <div class="col-4 d-flex justify-content-start">
                 <div class="sosmed-icon border border-secondary rounded-circle justify-content-center shadow">
                     <a href="https://www.facebook.com/nyoman.dimas.967" class="d-flex align-items-center" target="_blank" data-bs-toggle="tooltip" title="DwB Facebook Account" >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="black" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <svg id="sosmed-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="bi bi-facebook fill-hitam" viewBox="0 0 16 16">
                             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
                         </svg>
                     </a>
@@ -148,12 +152,12 @@
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" class="mt-5" viewBox="0 0 1440 320">
-            <path fill="rgb(245,245,245)" fill-opacity="1" d="M0,96L0,224L180,224L180,128L360,128L360,32L540,32L540,32L720,32L720,224L900,224L900,96L1080,96L1080,224L1260,224L1260,32L1440,32L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"></path>
+            <path class="fill-cerah2 fillCerah2" fill-opacity="1" d="M0,96L0,224L180,224L180,128L360,128L360,32L540,32L540,32L720,32L720,224L900,224L900,96L1080,96L1080,224L1260,224L1260,32L1440,32L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"></path>
         </svg>
     </section>
 <!-- Sosmed -end -->
 <!-- Contact -start -->
-    <section id="contact">
+    <section id="contact" class="dwb-bg-cerah">
         <div class="container">
             <div class="row mb-3">
                 <div class="col text-center mb-3">
@@ -189,19 +193,19 @@
                             <textarea class="form-control" id="pesan" placeholder="Mau menyampaikan apa.. ?" name="pesan" rows="3"></textarea>
                         </div>
 			            <div class="d-flex justify-content-center align-items-center">
-                            <button type="submit" class="btn btn-dark btn-kirim">Kirim</button>
+                            <button type="submit" class="btn btn-dark shadow-sm btn-kirim">Kirim</button>
                             <div class="spinner-border btn-loading1 d-none" style="width: 33px; height: 33px;" role="status">
                                 <span class="visually-hidden">Loading...</span>
-                              </div>
-                              <div class="spinner-grow btn-loading2 d-none" style="width: 33px; height: 33px;" role="status">
+                            </div>
+                            <div class="spinner-grow btn-loading2 d-none" style="width: 33px; height: 33px;" role="status">
                                 <span class="visually-hidden">Loading...</span>
-                              </div>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="rgb(225,225,225)" fill-opacity="1" d="M0,160L0,128L205.7,128L205.7,256L411.4,256L411.4,192L617.1,192L617.1,224L822.9,224L822.9,288L1028.6,288L1028.6,288L1234.3,288L1234.3,128L1440,128L1440,320L1234.3,320L1234.3,320L1028.6,320L1028.6,320L822.9,320L822.9,320L617.1,320L617.1,320L411.4,320L411.4,320L205.7,320L205.7,320L0,320L0,320Z"></path>
+                <path class="fill-gelap2 fillGelap2" fill-opacity="1" d="M0,160L0,128L205.7,128L205.7,256L411.4,256L411.4,192L617.1,192L617.1,224L822.9,224L822.9,288L1028.6,288L1028.6,288L1234.3,288L1234.3,128L1440,128L1440,320L1234.3,320L1234.3,320L1028.6,320L1028.6,320L822.9,320L822.9,320L617.1,320L617.1,320L411.4,320L411.4,320L205.7,320L205.7,320L0,320L0,320Z"></path>
             </svg>
         </div>
     </section>
@@ -215,7 +219,7 @@
         </div>
     </div>
 <!-- Footer -start -->
-<footer>
+<footer class="dwb-bg-gelap">
     <div class="row">
         <div class="col text-center">
             <p class="fs-4 text-secondary mb-1">Created by <a href="https://instagram.com/mngdms_22"  class="fw-bold text-dark text-decoration-none">Dimas Wirabakti</a></p>
@@ -229,7 +233,69 @@
 </footer>
 <!-- Footer -end -->
 
-    <script>
+<script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzmReXVaXn5cAeP5vqoAr_z-KFXFOsJMTlmL3_0PdR7iJb1fFLcLSt-WVQ2cerBOlwu3Q/exec";
+  	const form = document.forms['dwb-contact-form'];
+    const btnKirim = document.querySelector('.btn-kirim');
+    const btnLoading1 = document.querySelector('.btn-loading1');
+    const btnLoading2 = document.querySelector('.btn-loading2');
+    const suksesAlert = document.querySelector('.sukses-alert');
+    const gagalAlert = document.querySelector('.gagal-alert');
+
+    const themeButton = document.querySelector('#check');
+    const navBar = document.querySelector('.dwb-nav');
+    const header = document.querySelector('#header');
+    const about = document.querySelector('#about');
+    const sosmed = document.querySelector('#sosmed');
+    const contactMe = document.querySelector('#contact');
+    const dwbFooter = document.querySelector('footer');
+    const fillCerah = document.querySelector('.fillCerah');
+    const fillGelap = document.querySelector('.fillGelap');
+    const fillCerah2 = document.querySelector('.fillCerah2');
+    const fillGelap2 = document.querySelector('.fillGelap2');
+    const dwbImg1 = document.querySelector('#dwbImg1');
+    const dwbImg2 = document.querySelector('#dwbImg2');
+
+    themeButton.addEventListener('change', e => {
+        if (e.target.checked) {
+            navBar.classList.remove('navbar-dark'); navBar.classList.remove('bg-dark');
+            navBar.classList.add('navbar-white'); navBar.classList.add('dwb-bg-gelap');
+            
+            header.classList.remove('dwb-bg-gelap'); header.classList.add('dwb-bg-cerah');
+            about.classList.remove('dwb-bg-cerah'); about.classList.add('dwb-bg-gelap');
+            sosmed.classList.remove('dwb-bg-gelap'); sosmed.classList.add('dwb-bg-cerah');
+            contactMe.classList.remove('dwb-bg-cerah'); contactMe.classList.add('dwb-bg-gelap');
+            dwbFooter.classList.remove('dwb-bg-gelap'); dwbFooter.classList.add('dwb-bg-cerah');
+            btnKirim.classList.remove('btn-dark') ; btnKirim.classList.add('dwb-bg-cerah');
+            
+            fillCerah.classList.remove('fill-cerah'); fillCerah.classList.add('fill-gelap');
+            fillGelap.classList.remove('fill-gelap'); fillGelap.classList.add('fill-cerah');
+            fillCerah2.classList.remove('fill-cerah2'); fillCerah2.classList.add('fill-gelap2');
+            fillGelap2.classList.remove('fill-gelap2'); fillGelap2.classList.add('fill-cerah2');
+
+            dwbImg1.classList.remove('img-thumbnail') ; dwbImg1.classList.add('border-gelap');
+            dwbImg2.classList.remove('border-gelap') ; dwbImg2.classList.add('img-thumbnail');
+        } else {
+            navBar.classList.remove('navbar-white'); navBar.classList.remove('dwb-bg-gelap');
+            navBar.classList.add('navbar-dark'); navBar.classList.add('bg-dark');
+
+            header.classList.remove('dwb-bg-cerah'); header.classList.add('dwb-bg-gelap');
+            about.classList.remove('dwb-bg-gelap'); about.classList.add('dwb-bg-cerah');
+            sosmed.classList.remove('dwb-bg-cerah'); sosmed.classList.add('dwb-bg-gelap');
+            contactMe.classList.remove('dwb-bg-gelap'); contactMe.classList.add('dwb-bg-cerah');
+            dwbFooter.classList.remove('dwb-bg-cerah'); dwbFooter.classList.add('dwb-bg-gelap');
+            
+            fillCerah.classList.remove('fill-gelap'); fillCerah.classList.add('fill-cerah');
+            fillGelap.classList.remove('fill-cerah'); fillGelap.classList.add('fill-gelap');
+            fillCerah2.classList.remove('fill-gelap2'); fillCerah2.classList.add('fill-cerah2');
+            fillGelap2.classList.remove('fill-cerah2'); fillGelap2.classList.add('fill-gelap2');
+            btnKirim.classList.remove('dwb-bg-cerah') ; btnKirim.classList.add('btn-dark');
+            
+            dwbImg1.classList.remove('border-gelap') ; dwbImg1.classList.add('img-thumbnail');
+            dwbImg2.classList.remove('img-thumbnail') ; dwbImg2.classList.add('border-gelap');
+        }
+    });
+
     window.addEventListener('scroll', () => {
         const element = document.getElementById('float-element');
         const elementShow = 350;
@@ -243,43 +309,36 @@
     document.querySelector('#float-element').addEventListener('click', () => {
         window.open('#home','_self')
     });
-  	const scriptURL = "https://script.google.com/macros/s/AKfycbzmReXVaXn5cAeP5vqoAr_z-KFXFOsJMTlmL3_0PdR7iJb1fFLcLSt-WVQ2cerBOlwu3Q/exec";
-  	const form = document.forms['dwb-contact-form'];
-        const btnKirim = document.querySelector('.btn-kirim');
-        const btnLoading1 = document.querySelector('.btn-loading1');
-        const btnLoading2 = document.querySelector('.btn-loading2');
-        const suksesAlert = document.querySelector('.sukses-alert');
-        const gagalAlert = document.querySelector('.gagal-alert');
-
+  	
   	form.addEventListener('submit', e => {
     	e.preventDefault();
         // Hilangkan btn-kirim, munculkan btn-loading
-        btnKirim.classList.toggle('d-none')
-        btnLoading1.classList.toggle('d-none')
-        btnLoading2.classList.toggle('d-none')
+        btnKirim.classList.toggle('d-none');
+        btnLoading1.classList.toggle('d-none');
+        btnLoading2.classList.toggle('d-none');
     	fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       	.then(response => {
-            console.log('Success!', response)
+            console.log('Success! ', response);
             // Hilangkan btn-loading, munculkan btn-kirim
-            btnKirim.classList.toggle('d-none')
-            btnLoading1.classList.toggle('d-none')
-            btnLoading2.classList.toggle('d-none')
+            btnKirim.classList.toggle('d-none');
+            btnLoading1.classList.toggle('d-none');
+            btnLoading2.classList.toggle('d-none');
             // Tampilkan alert sukses
-            suksesAlert.classList.toggle('d-none')
+            suksesAlert.classList.toggle('d-none');
             // Reset Form Label nya
             form.reset();
         })
       	.catch(error => {
-            console.error('Error!', error.message)
+            console.error('Error! ', error.message);
             // Hilangkan btn-loading, munculkan btn-kirim
-            btnKirim.classList.toggle('d-none')
-            btnLoading1.classList.toggle('d-none')
-            btnLoading2.classList.toggle('d-none')
+            btnKirim.classList.toggle('d-none');
+            btnLoading1.classList.toggle('d-none');
+            btnLoading2.classList.toggle('d-none');
             // Tampilkan alert Gagal
-            gagalAlert.classList.toggle('d-none')
+            gagalAlert.classList.toggle('d-none');
             // Label Form nya tidak perlu di reset
         })
   	});
-    </script>
+</script>
 </body>
 </html>
